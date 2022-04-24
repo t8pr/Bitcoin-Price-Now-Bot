@@ -57,4 +57,4 @@ async def btc(ctx):
         await ctx.send(embed=btc_embad)
     
 
-client.run('OTU5NzgwODMxMDM4MTYwOTI2.Ykg3jQ.kdf02XZS9Ri2Lot78F9vYt6fkoY')
+client.run('YOUR BOT TOKEN')
