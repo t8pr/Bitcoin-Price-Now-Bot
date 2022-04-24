@@ -18,7 +18,6 @@ async def info(ctx):
     inf_embed = discord.Embed(title="```Bot information```", color=0xBD9B4B)
     inf_embed.set_thumbnail(url=f"{gif}")
     inf_embed.add_field(name="** **", value="`$btc` ** -> For See Btc Price **", inline=False)
-    inf_embed.add_field(name="** **", value="`$dev` ** -> Info About Developer **", inline=False)
     inf_embed.add_field(name="** **", value="`$ping` ** -> For See Bot Ping **", inline=False)
     await ctx.send(embed=inf_embed)
 
@@ -26,13 +25,6 @@ async def info(ctx):
 async def ping(ctx):
     ping_embed = discord.Embed(title="Bitcoin Price Ping", description=f"**This Bitcoin Price Now Bot Ping : {round(client.latency*1000)} ms**", color=0x167F93)
     await ctx.send(embed=ping_embed)
-
-@client.command()
-async def dev(ctx):
-    dev_embed = discord.Embed(title="Developer Bot", description=f"**This Price Master Bot Programmed By 8PR**", color=0xffffff)
-    dev_embed.add_field(name="Website", value="https://8pr.club", inline=True)
-    dev_embed.add_field(name="instagram", value="[T8PR](https://www.instagram.com/t8pr)", inline=True)
-    await ctx.send(embed=dev_embed)
 
 @client.command()
 async def btc(ctx):
